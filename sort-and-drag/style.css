@@ -1,0 +1,99 @@
+:root {
+  --primary: #0969DA;
+  --background: #EDEEF7;
+  --gray: #EDEEF7;
+  --white: #FCFCFC;
+  --navbar-height: 60px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  background: var(--background);
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+#team-memebers {
+  margin: auto;
+  display: flex;
+  max-width: 35rem;
+  flex-direction: column;
+  background: var(--white);
+  border-radius: 2rem;
+  gap: 1rem;
+  padding: 1.5rem;
+  width: 100%;
+  box-shadow:
+    rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+}
+
+.team-member {
+  position: relative;
+  z-index: 1;
+  min-height: 3.75rem;
+  display: flex;
+  padding: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  border-radius: 1.5rem;
+  background: var(--white);
+  box-shadow:
+    rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+}
+
+.team-member:hover {
+  cursor: grab;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  margin-left: auto;
+  gap: .375rem;
+  flex-direction: row;
+}
+
+.social-links img {
+  height: 1.25rem;
+  width: 1.25rem;
+  cursor: pointer;
+}
+
+.team-member-avatar {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.team-member-name {
+  display: grid;
+  gap: 0.125em;
+}
+
+.team-member-name h3 {
+  font-size: large
+}
+
+.team-member-name p {
+  font-size: smaller;
+}
+
+.team-member-chosen {
+  /* border: 1px dashed var(--primary); */
+}
+
+.team-member-drag {
+  opacity: 0.2;
+  border: 1px dashed var(--primary);
+}

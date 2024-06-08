@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --side-bar-background: '#f8fafc';
+  --red: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  height: 100vh;
+}
+
+img {
+  object-fit: cover;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar {
+  background: var(--side-bar-background);
+  width: 5%;
+  height: 93%;
+  position: fixed;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.sidebar img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.sidebar .nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px
+}
+
+.sidebar .nav .item>i {
+  font-size: 25px;
+  color: #b9bec6;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar .nav .item.active>i,
+.sidebar .nav .item>i:hover {
+  color: #1263dd;
+}
+
+.main {
+  margin-left: 96px;
+  background: var(--side-bar-background);
+  width: 65%;
+  padding: 24px;
+  border-radius: 24px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main .header {
+  margin-bottom: 20px;
+}
+
+.main .header .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main .header .info .details {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  color: #818a98;
+}
+
+.main .header .info .time {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.main .header .info .time i {
+  color: #66bb6a;
+}
+
+#share_meeting {
+  text-decoration: none;
+  color: #1263dd;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  padding: 12px 24px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+#share_meeting:hover {
+  background: #1263dd;
+  color: #fff;
+  box-shadow: unset;
+}
+
+.call .host {
+  position: relative;
+}
+
+.main .call .host img {
+  height: 470px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.main .call .clients {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.main .call .clients .item {
+  position: relative;
+}
+
+.main .call .clients img {
+  width: 100%;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 10px;
+}
+
+.main .tag {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 4px 14px;
+  border-radius: 10px;
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+}
+
+.main .controls {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+
+.main .controls i {
+  font-size: 24px;
+  color: #67707e;
+  background: #fff;
+  padding: 12px 13px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.main .controls i:hover {
+  background: #1263dd;
+  color: #fff;
+}
+
+.main .controls button {
+  font-size: 15px;
+  border: none;
+  background: #eb3d4b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.main .controls button:hover {
+  background: #ec0918;
+}
+
+.right-section {
+  width: 30%;
+  background:  #f8fafc;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  border-radius: 20px;
+}
+
+.right-section .messages .item img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.right-section > h3{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.right-section .description{
+ font-size: 12px;
+ color: #818a98;
+}
+.right-section .messages{
+  margin: 30px 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 78%;
+}
+.right-section .messages .item{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.right-section .messages .item .info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.right-section .messages .item .info h5{
+  color: #1263dd;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.right-section .messages .item .info p{
+  color: #b9bec6;
+  font-size: 11px;
+}
+.right-section .messages .item .text{
+  background: #fff;
+  border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    width: 100%;
+}
+.right-section .messages .item .text > p{
+  font-size: 13px;
+}
+.right-section .send{
+  background: #fff;
+  padding: 12px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.right-section .send i{
+  font-size: 26px;
+  color: #fff;
+  padding: 4px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.right-section .send i.stickerIcon{
+  background: #e2a60e;
+}
+
+.right-section .send i.sendIcon{
+  background: #1263dd;
+  font-size: 22px;
+  padding: 6px;
+}
+.right-section .send input{
+  flex:1;
+  border:none;
+  outline: none;
+}
+

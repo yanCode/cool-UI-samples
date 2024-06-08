@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <sidebar class="sidebar">
+      <div class="logo"><img src="assets/logo.png" alt="logo" /></div>
+      <ul class="nav">
+        <li class="item">
+          <i class="ri-home-5-fill"></i>
+        </li>
+        <li class="item">
+          <i class="ri-video-on-fill"></i>
+        </li>
+        <li class="item active">
+          <i class="ri-mic-2-fill"></i>
+        </li>
+        <li class="item">
+          <i class="ri-message-2-fill"></i>
+        </li>
+      </ul>
+      <img src="assets/profile-1.png" />
+    </sidebar>
+    <main class="main">
+      <div class="header">
+        <h3>Video Meeting</h3>
+        <div class="info">
+          <div class="details">
+            <p class="date">5 June 2024</p>
+            <p class="time">
+              <i class="ri-record-circle-fill"></i>
+              <span>Online 26:48</span>
+            </p>
+          </div>
+          <a id="share_meeting" href="#">Share Meeting Link</a>
+        </div>
+      </div>
+      <div class="call">
+        <div class="host">
+          <img src="assets/host.jpg" alt="host" />
+          <span class="tag">Selina</span>
+        </div>
+        <ul class="clients">
+          <li class="item">
+            <img src="assets/client-1.jpg" alt="Sara" />
+            <span class="tag">Sara</span>
+          </li>
+          <li class="item">
+            <img src="assets/client-2.jpg" alt="Tom" />
+            <span class="tag">Tom</span>
+          </li>
+          <li class="item">
+            <img src="assets/client-3.jpg" alt="Jenifer" />
+            <span class="tag">Jenifer</span>
+          </li>
+          <li class="item">
+            <img src="assets/client-4.jpg" alt="You" />
+            <span class="tag">You</span>
+          </li>
+        </ul>
+      </div>
+      <div class="controls">
+        <i class="ri-video-off-fill red"></i>
+        <i class="ri-mic-off-line"></i>
+        <button>Leave</button>
+        <i class="ri-computer-line"></i>
+        <i class="ri-closed-captioning-line"></i>
+      </div>
+    </main>
+    <section class="right-section">
+      <h3>Chat History</h3>
+      <span class="description">You can chat here with other members during video call.</span>
+      <div class="messages">
+        <div class="item">
+          <img src="assets/profile-1.png" alt="profile-1" />
+          <div class="text">
+            <div class="info">
+              <h5>Sara</h5>
+              <p>03:45</p>
+            </div>
+            <p>Hello, How are you doing?</p>
+          </div>
+        </div>
+      </div>
+      <div class="send">
+        <i class="ri-emoji-sticker-fill stickerIcon"></i>
+        <input type="text" placeholder="Write a message..." />
+        <i class="ri-send-plane-2-fill sendIcon"></i>
+      </div>
+    </section>
+  </body>
+</html>

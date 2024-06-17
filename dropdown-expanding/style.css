@@ -1,0 +1,135 @@
+:root {
+  --primary-item: #3B3E40;
+  --background-item: #EFEFEF;
+  --gray: #D5D4D5;
+  --background: #2C2C2C;
+  --item-non-hover: #92969A
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.accordion-container {
+  background: #FCFCFC;
+  width: 330px;
+  padding: 16px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.main-item {
+  border-radius: 8px;
+  color: var(--item-non-hover);
+  cursor: pointer;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: start;
+  transition: all ease-in-out 0.25s;
+}
+
+.main-item:hover {
+  background-color: var(--background-item);
+  color: var(--primary-item);
+}
+
+.main-item svg {
+  stroke: var(--item-non-hover);
+  transition: all ease-in-out 0.25s;
+}
+
+.main-item:hover svg {
+  stroke: var(--primary-item);
+}
+
+.main-item.open {
+  background-color: var(--background-item);
+  transition: all 200ms;
+  color: var(--primary-item);
+}
+
+.main-item.open:hover {
+  color: var(--primary-item);
+  border-radius: 8px;
+  background-color: var(--background-item);
+}
+
+.main-item.open svg {
+  stroke: var(--primary-item);
+}
+
+.expand-icon {
+  margin-left: auto;
+  height: 24px;
+  width: 24px;
+  transition: all ease-in-out 0.25s;
+}
+
+.main-item.open .expand-icon {
+  transform: rotate(90deg);
+}
+
+.accordion-container>ul {
+  opacity: 0;
+  max-height: 0;
+}
+
+.main-item.open+ul {
+  opacity: 1;
+  max-height: 400px;
+  transition: all ease-in-out 0.25s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordion-container>ul>li {
+
+  height: 48px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.accordion-container>ul>li>a {
+  text-decoration: none;
+  color: var(--item-non-hover);
+  padding: 16px 8px;
+  display: flex;
+  align-items: center;
+}
+
+.accordion-container>ul>li:hover {
+  color: var(--primary-item);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.accordion-container>ul>li:hover>a {
+  color: var(--primary-item);
+  background: var(--background-item);
+  width: 100%;
+}

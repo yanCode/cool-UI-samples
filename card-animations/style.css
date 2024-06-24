@@ -1,0 +1,40 @@
+:root {
+    --white: #fefefe;
+    --offset: 1rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.card-container {
+    border: 1px solid red;
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 50rem;
+    margin-top: 5rem;
+    margin-inline: auto;
+}
+
+.card {
+    position: relative;
+    max-width: 18rem;
+    cursor: pointer;
+    cursor: pointer;
+    background: #000;
+}
+

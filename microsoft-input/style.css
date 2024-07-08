@@ -53,28 +53,6 @@ body {
     color: transparent;
 }
 
-.input__field:placeholder-shown ~ .input__label {
-    font-size: 1.5rem;
-    cursor: text;
-    top: 20px;
-}
-
-.input__label {
-    position: absolute;
-    top: 0;
-    display: block;
-    transition: 0.2s;
-    font-size: 1rem;
-    color: var(--secondary);
-}
-
-.input__field:focus {
-    padding-bottom: 6px;
-    font-weight: 700;
-    border-width: 3px;
-    border-image: linear-gradient(to right, var(--primary), var(--secondary));
-}
-
 .input__icon:hover {
     border-radius: 50%;
     background: var(--hover);
@@ -84,7 +62,7 @@ body {
     color: transparent;
 }
 
-.input__field:placeholder-shown ~ .input__label {
+.input__field:placeholder-shown ~ #input__label {
     font-size: 1rem;
     cursor: text;
     color: var(--secondary);
@@ -92,19 +70,17 @@ body {
 }
 
 label,
-.input__field:focus ~ .input__label {
+.input__field:focus ~ #input__label {
     position: absolute;
     top: 0;
     display: block;
     font-size: 0.875rem;
     left: -0.0625rem;
-    color: var(--secondary);
+    color: var(--primary);
     transition: 0.3s;
 }
 
-.input__field:focus ~ .input__label {
-    color: var(--primary);
-}
+
 
 .input__field:focus {
     border-bottom: 2px solid var(--primary);

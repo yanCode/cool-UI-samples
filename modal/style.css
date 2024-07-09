@@ -1,0 +1,72 @@
+:root {
+    --primary: #323AC0;
+    --text: #252728;
+    --headline: #1A1E1F;
+    --gray-text: #6D7679;
+    --white: #fff;
+    --background: #F8F8FF;
+    --gray-dark: #9BA2A4;
+    --gray-light: #F3F3F4;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    background: var(--background);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.share-btn {
+    border-radius: 50%;
+    appearance: none;
+    color: var(--primary);
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 3px 6px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    background: var(--white);
+    padding: 1rem;
+}
+
+.share-btn:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0 6px 12px;
+}
+
+dialog {
+    display: unset;
+    border-radius: 0.75rem;
+    width: 100%;
+    max-width: 35rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+    margin: 4rem auto 0;
+    background: var(--white);
+    border: none;
+}
+
+dialog header {
+    border-bottom: 1px solid var(--gray-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 4rem;
+    padding: 1.5rem 2rem 0.75rem 2rem;
+}
+
+dialog header h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--headline);
+}

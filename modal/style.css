@@ -44,6 +44,20 @@ body {
 .share-btn:hover {
     box-shadow: rgba(149, 157, 165, 0.2) 0 6px 12px;
 }
+.close-btn {
+    background: inherit;
+    border: none;
+    cursor: pointer;
+}
+.close-btn svg{
+    width: 1.7rem;
+    height: 1.7rem;
+    stroke: var(--gray-dark);
+    transition: all 0.2s ease-in-out;
+}
+.close-btn:hover svg {
+  stroke: var(--primary);
+}
 
 dialog {
     display: unset;
@@ -69,4 +83,42 @@ dialog header h2 {
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--headline);
+}
+.dialog-content{
+    padding: 2rem;
+}
+.copy-link-wrapper{
+    background: var(--gray-light);
+    display: flex;
+
+    color: var(--gray-text);
+    border-radius: 0.5rem;
+    padding: .25rem .25rem .25rem 1.5rem;
+    justify-content: space-between;
+}
+.copy-link-wrapper input{
+    color: var(--gray-text);
+    outline: none;
+    border: none;
+    background: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.copy-link-wrapper input::selection{
+    background: var(--primary);
+    color: var(--white);
+}
+.copy-link-wrapper button{
+    color: var(--primary);
+    white-space: nowrap;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+   gap: .5rem;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 3px 6px;
+    background: var(--white);
+    border-radius: 0.4rem;
+    font-weight: 700;
 }

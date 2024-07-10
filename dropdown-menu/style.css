@@ -1,0 +1,76 @@
+:root {
+    --primary: #000000;
+    --background: #FAFAFA;
+    --secondary-background: #F2F2F2;
+    --gray: #847F90;
+    --gray-hover: #171717;
+    --primary-hover: #555555;
+    --link-gray: #666666;
+    --link-gray-hover: #171717;
+    --gray: #E1E1E1;
+    --gray-border: #E6E6E6;
+    --white: #FCFCFC;
+    --navbar-height: 64px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-wrapper {
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    background: var(--background);
+    height: var(--navbar-height);
+
+}
+
+.menu-bar {
+    display: flex;
+    /*align-items: center;*/
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo svg {
+    fill: var(--primary);
+}
+
+.navigation {
+    display: flex;
+    background: green;
+    gap: 1rem;
+    background: var(--background);
+}
+.navigation>li{
+    display: flex;
+    cursor: pointer;
+    min-height: 2.25rem;
+    align-items: center;
+}
+.navigation>li>a{
+    color: var(--link-gray);
+}
+.navigation>li>a:hover {
+    color: var(--link-gray-hover);
+}

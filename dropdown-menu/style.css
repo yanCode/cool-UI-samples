@@ -110,7 +110,6 @@ a {
 
 .navigation > li > button svg {
   margin-top: 2px;
-  fill: var(--link-gray);
   rotate: 0deg;
   transition: all 0.3s ease;
 }
@@ -130,6 +129,7 @@ a {
 .dropdown {
   background: var(--white);
   display: none;
+  border-radius: 0.5rem;
   border: 1px solid var(--gray-border);
   box-shadow: 0 50px 100px -20px rgba(0, 0, 0, .12),
   0 30px 60px -30px rgba(0, 0, 0, .15);
@@ -141,6 +141,7 @@ a {
 .list-items-with-description {
   display: grid;
   width: 100%;
+  grid-template-columns: 1fr 1fr;
   
 }
 

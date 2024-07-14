@@ -166,14 +166,66 @@
       </ul>
     </nav>
   </div>
-  <div class="action-buttons hide">
-    <a class="secondary" href="#log-in" title="Log in">
-      Log In
-    </a>
-    <a class="primary" href="#sign-up" title="Sign up">
-      Sign up
-    </a>
-  </div>
+  <ul class="action-buttons hide">
+    <li>
+      <a href="#notification">
+        <svg fill="none" height="24" stroke="currentColor"
+             stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+             xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none" stroke="none"></path>
+          <path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"></path>
+          <path d="M9 17v1a3 3 0 0 0 6 0v-1"></path>
+        </svg>
+      </a>
+    </li>
+    <!--    <a class="secondary" href="#log-in" title="Log in">-->
+    <!--      Log In-->
+    <!--    </a>-->
+    <!--    <a class="primary" href="#sign-up" title="Sign up">-->
+    <!--      Sign up-->
+    <!--    </a>-->
+    <li>
+      <a href="#profile">
+        <img alt="Joe Doe Picture" class="profile" src="assets/joe-doe-profile.png">
+      </a>
+      <div class="dropdown__wrapper">
+        <div class="dropdown__group">
+          <div class="user-name">Joe Doe</div>
+          <div class="email">joe.doe@atheros.ai</div>
+        </div>
+        <hr class="divider">
+        <nav>
+          <ul>
+            <li>
+              <img alt="Profile" src="assets/profile.svg"> My Profile
+            </li>
+            <li>
+              <img alt="Settings" src="assets/settings.svg"> Settings
+            </li>
+          </ul>
+          <hr class="divider">
+          <ul>
+            <li>
+              <img alt="Tutorials" src="assets/tutorials.svg"> Tutorials
+            </li>
+            <li>
+              <img alt="Help" src="assets/help.svg"> Help Center
+            </li>
+          </ul>
+          <hr class="divider">
+          <ul>
+            <li>
+              <img alt="Premium" src="assets/premium.svg">Go Premium
+            </li>
+            <li style="color: #E3452F;">
+              <img alt="Log Out" src="assets/logout.svg">Log out
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </li>
+
+  </ul>
   <button aria-label="Open menu" class="burger-menu" style="display:none;" type="button">
     <svg class="icon icon-tabler icon-tabler-menu" fill="none" height="24" stroke="currentColor"
          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"

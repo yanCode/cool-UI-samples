@@ -96,6 +96,7 @@ a {
   display: flex;
   transition: all 0.3s ease;
   border: none;
+  background: none;
   font-family: inherit;
   color: var(--link-gray);
   text-decoration: none;
@@ -112,6 +113,11 @@ a {
   margin-top: 2px;
   rotate: 0deg;
   transition: all 0.3s ease;
+}
+
+.navigation > li:hover > button {
+  color: var(--link-gray-hover);
+  background: var(--secondary-background);
 }
 
 .navigation > li:hover > button svg {

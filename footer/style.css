@@ -1,0 +1,28 @@
+:root {
+  --text-color: #959DA5;
+  --footer-bg: #0D1117;
+  --footer-bottom-bg: #161B22;
+  --white: white;
+  --link-color: #959DA5;
+  --link-hover: #2F81CF;
+  --button-border: #848D97;
+}
+
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+  background: var(--footer-bg);
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: end;
+}

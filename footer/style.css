@@ -16,6 +16,16 @@
   box-sizing: border-box;
 }
 
+ul {
+  display: flex;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
 body {
   font-size: 16px;
   font-family: 'Inter', sans-serif;
@@ -25,4 +35,140 @@ body {
   height: 100vh;
   flex-direction: column;
   justify-content: end;
+}
+
+footer {
+  background: var(--footer-bg);
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  
+}
+
+.footer-logo-column {
+  
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.footer-logo-column h3 {
+  color: var(--white);
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+}
+
+.footer-logo-column p {
+  color: var(--text-color);
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-logo svg {
+  fill: var(--white);
+}
+
+.subscribe-btn {
+  display: flex;
+  color: var(--white);
+  border: 1px solid var(--link-color);
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 8rem;
+  font-weight: 700;
+  border-radius: 0.375rem;
+  user-select: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.subscribe-btn:hover {
+  border: 3px solid var(--white);
+  font-weight: 900;
+}
+
+.bottom-column {
+  margin-top: 3rem;
+  width: 100%;
+  padding: 1rem 0;
+  color: var(--text-color);
+  background-color: var(--footer-bottom-bg);
+}
+
+.bottom-column-wrapper {
+  margin: 0 auto;
+  display: flex;
+  max-width: 70rem;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+  align-items: center;
+}
+
+.bottom-column-wrapper small {
+  font-size: 1rem;
+  display: inline;
+  white-space: nowrap;
+}
+
+.bottom-column-wrapper .footer-bottom-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.bottom-column-wrapper .footer-bottom-links li:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.bottom-column-wrapper .footer-bottom-links a {
+  white-space: nowrap;
+}
+
+.social-wrapper ul {
+  display: flex;
+  gap: .7rem;
+  align-items: center;
+}
+
+.list-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 2rem 1rem;
+  padding-top: 2rem;
+}
+
+.list-column div {
+  border: 1px solid darkred;
+}
+
+.list-column div ul {
+  gap: 0.75rem;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.list-column ul li a {
+  font-size: .85rem;
+}
+
+.list-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.list-column h3 {
+  color: var(--link-color);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-family: ui-monospace, monospace;
 }

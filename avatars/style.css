@@ -1,0 +1,51 @@
+:root {
+  --green: #2ECC71;
+  --orange: #ffd500;
+  --white: #F8F8FF;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  background: var(--white);
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+}
+
+
+.avatars {
+  margin-top: 10rem;
+  display: flex;
+  
+}
+
+.avatars img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  border: 8px solid var(--green);
+  outline: 4px solid var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+.avatars img:not(:first-child) {
+  margin-left: -2rem;
+}
+
+.avatars img:hover {
+  border: 8px solid var(--orange);
+  transform: scale(1.1);
+}

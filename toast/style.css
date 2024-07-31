@@ -37,6 +37,7 @@ body {
 .notification__icon {
   height: 1.625rem;
   width: 1.625rem;
+  pointer-events: none;
 }
 
 .notification__body {
@@ -44,6 +45,7 @@ body {
   align-items: center;
   gap: .5rem;
   padding: 1rem 1rem;
+  user-select: none;
   
 }
 

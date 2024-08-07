@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<form action="#" class="dropzone-box">
+  <h2>Upload and attach files</h2>
+  <p>Click to upload or drag and drop</p>
+  <div class="dropzone-area">
+    <div class="file-upload-icon">
+      <svg class="icon icon-tabler icon-tabler-cloud-upload" fill="none" height="24"
+           stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+           width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none" stroke="none"/>
+        <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1"/>
+        <path d="M9 15l3 -3l3 3"/>
+        <path d="M12 12l0 9"/>
+      </svg>
+    </div>
+    <input id="upload-file" name="upload-file" required type="file">
+    <p class="file-info">No Files Selected</p>
+  </div>
+  <div class="dropzone-actions">
+    <button type="reset">
+      Cancel
+    </button>
+    <button id="submit-button" type="submit">
+      Save
+    </button>
+  </div>
+</form>
+</body>
+</html>

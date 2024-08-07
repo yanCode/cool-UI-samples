@@ -63,11 +63,6 @@ body {
   border-radius: inherit;
   transform: scaleX(0);
   transform-origin: left;
-  background: linear-gradient(
-      to right,
-      var(--notification-background),
-      var(--notification-primary)
-  );
   animation: progress 2.5s 0.3s linear;
 }
 

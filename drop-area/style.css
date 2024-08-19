@@ -45,6 +45,7 @@ body {
   width: 100%;
   overflow: hidden;
   max-width: 36rem;
+  gap: .5rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -82,8 +83,7 @@ body {
   font-size: 1.1rem;
 }
 
-.dropzone-area [type="file"] {
-  background: red;
+#upload-file {
   position: absolute;
   inset: 0;
   opacity: 0;
@@ -108,7 +108,7 @@ body {
 .dropzone-actions {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   gap: 1rem;
   flex-wrap: wrap;
 }
